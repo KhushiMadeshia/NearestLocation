@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NearestLocation</string>
+    <string name="google_maps_key">AIzaSyCN-tJcaQD_aks8pX6jCH9U1lvosYjKKy0</string>
+
 </resources>

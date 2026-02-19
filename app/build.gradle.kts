@@ -48,4 +48,10 @@ dependencies {
     implementation(libs.play.services.maps)
     implementation(libs.lifecycle.viewmodel)
     implementation(libs.lifecycle.livedata)
+
+    implementation(libs.google.places)
+
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+
 }

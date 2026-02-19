@@ -15,6 +15,7 @@ import androidx.core.app.ActivityCompat;
 import com.example.nearestlocation.R;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.libraries.places.api.Places;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -25,11 +26,15 @@ public class SplashActivity extends AppCompatActivity {
     private double longitude = 0.0;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        Places.initialize(
+                getApplicationContext(),
+                getString(R.string.google_maps_key)
+        );
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
